@@ -63,7 +63,7 @@ Throughout these projects, I have utilized a variety of technologies and tools, 
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [GSAP](https://gsap.com/)
-- [Vite](hhttps://vite.dev/)
+- [Vite](https://vite.dev/)
 - [Vercel](https://vercel.com/)
 
 ## 😊 How to run
