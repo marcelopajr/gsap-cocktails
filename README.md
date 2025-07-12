@@ -1,69 +1,89 @@
-# React + TypeScript + Vite
+<h1 align="center">
+    <img alt="Velvet Pour" title="Velvet Pour" src=".github/logo.svg" width="40px" />
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <a href="#-about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-how-to-run">How to run</a>
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  <img alt="Velvet Pour" src=".github/velvet-pour.png" width="100%">
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⛅ About
 
-## Expanding the ESLint configuration
+Velvet Pour is an immersive landing page created for a premium cocktail brand. Designed to evoke elegance and exclusivity, it leverages motion design and refined aesthetics to engage users and tell a compelling brand story.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Project
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🌟 Situation:
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Luxury brands require more than static pages, they thrive on immersive digital storytelling. The challenge was to design a scroll-animated landing page that reflects the product's premium identity while maintaining high performance and accessibility.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+🎯 Task:
+
+Develop a landing page that:
+
+- Features smooth, high-end animations to captivate the user.
+- Offers a clean, responsive layout across all devices.
+- Enhances branding through visual storytelling and motion.
+- Uses modern technologies for maintainability and scalability.
+
+🚀 Action:
+
+To achieve this, I implemented the following:
+
+- Animation Design: Leveraged GSAP for seamless scroll-triggered animations that enrich the user journey.
+- Modern Stack: Utilized React.js with Vite for fast bundling and optimal performance.
+- Responsive Styling: Employed Tailwind CSS to ensure consistent design across screen sizes.
+- Type Safety: Adopted TypeScript to boost code quality and maintainability.
+- Clean Architecture: Organized components in a modular and scalable structure.
+
+🏆Result:
+
+Velvet Pour successfully delivered:
+
+- Immersive Experience: Engaged users through refined motion and storytelling.
+- High Performance: Fast-loading and responsive design, even with animations.
+- Developer-Friendly Codebase: Type-safe, scalable, and well-structured.
+- Premium Aesthetic: Fully aligned with high-end brand identity.
+
+Explore Velvet Pour’s live experience:
+
+<h3 align="center"><a href="https://velvet-pour-menu.vercel.app/" target="_blank">https://velvet-pour-menu.vercel.app/</a> 🍹✨</h3>
+
+## 🔧 Technologies
+
+Throughout these projects, I have utilized a variety of technologies and tools, including:
+
+- [React.js](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [GSAP](https://gsap.com/)
+- [Vite](hhttps://vite.dev/)
+- [Vercel](https://vercel.com/)
+
+## 😊 How to run
+
+Before starting, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed on your machine.
+
+```sh
+- Clone this repo:
+$ git clone https://github.com/marcelopajr/gsap-cocktails.git
+
+- Enter directory:
+$ cd gsap-cocktails
+
+- Install dependencies:
+$ npm install
+
+- Launch the app:
+$ npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Now the app will be running at: http://localhost:5173 🚀
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Enjoy the magic of motion-driven UI! 🍹✨
